@@ -27,10 +27,6 @@ module "blog_vpc" {
   azs             = ["eu-west-3a", "eu-west-3b", "eu-west-3c"]
   public_subnets  = ["10.0.101.0/24", "10.0.102.0/24", "10.0.103.0/24"]
 
-  public_subnet_tags = {
-    "map_public_ip_on_launch" = "true"
-  }
-
   tags = {
     Terraform = "true"
     Environment = "dev"
